@@ -23,11 +23,13 @@ environment:
 vars:
   repository_name:
     type: string
+    default: repo
     description: The name for the new repository
     prompt: What is the repository name?
 
   implementation_prefix:
     type: string
+    default: impl
     description: Prefix for the implementation API
     prompt: What would be the implementation API prefix?
 

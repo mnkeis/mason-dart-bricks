@@ -40,7 +40,6 @@ void run(HookContext context) {
         returnType.toLowerCase().contains('>');
     final isFuture = returnType.toLowerCase().contains('future');
     final isStream = returnType.toLowerCase().contains('stream');
-
     final parameters = <Map<String, dynamic>>[];
 
     if (logger.confirm(
