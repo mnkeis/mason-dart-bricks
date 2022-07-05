@@ -48,7 +48,7 @@ Future<void> run(HookContext context) async {
   }
 
   final modelsDirectory = Directory.fromUri(Uri.directory(
-      '${Directory.current.path}/$repository_name\_api/lib/src/models'));
+      '${Directory.current.path}/${repository_name.snakeCase}_api/lib/src/models'));
   final barrelFile = File.fromUri(
     Uri.file('${modelsDirectory.path}/models.dart'),
   );
